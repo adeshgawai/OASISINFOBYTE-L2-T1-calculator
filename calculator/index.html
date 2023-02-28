@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+	<title>adesh</title>
+</head>
+<body>
+	<div class="heading">
+		<h3>CALCULATOR</h3>
+	</div>
+	<div class="container">
+		
+		<div class="screen">
+			<input type="text" id="result">
+		</div>
+		<div class="keyboard">
+          <div class="first-row display">
+			<div class="button"><p><input type="button" value="AC" onclick="clr()"></p></div>
+			<div class="button"><p><input type="button" value="DEL" onclick="delete_last_char()"></p> </div>
+			<div class="button"><p><input type="button" value="/" onclick="dis('/')" onkeydown="myFunction(event)"></p></div>
+			<div class="button"><p><input type="button" value="*" onclick="dis('*')" onkeydown="myFunction(event)"></p></div>
+		  </div>
+		  <div class="second-row display">
+			<div class="button"><p><input type="button" value="7" onclick="dis('7')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button"><p><input type="button" value="8" onclick="dis('8')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button"><p><input type="button" value="9" onclick="dis('9')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button"><p><input type="button" value="-" onclick="dis('-')" onkeydown="myFunction(event)"></p> </div>
+		  </div>
+		  <div class="third-row display">
+			<div class="button"><p><input type="button" value="6" onclick="dis('6')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button"><p><input type="button" value="5" onclick="dis('5')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button"><p><input type="button" value="4" onclick="dis('4')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button"><p><input type="button" value="+" onclick="dis('+')" onkeydown="myFunction(event)"></p> </div>
+		  </div>
+		  <div class="fourth-row display">
+			<div class="button"><p><input type="button" value="1" onclick="dis('1')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button"><p><input type="button" value="2" onclick="dis('2')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button"><p><input type="button" value="3" onclick="dis('3')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button equal-button"><p><input type="button" value="=" onclick="solve()"></p> </div>
+		  </div>
+		  <div class="six-row display">
+			<div class="button last-row"><p><input type="button" value="0" onclick="dis('0')" onkeydown="myFunction(event)"></p> </div>
+			<div class="button last-row"><p><input type="button" value="." onclick="dis('.')" onkeydown="myFunction(event)"></p></div>
+			
+		  </div>
+
+		</div>
+	</div>
+
+</body>
+<script src="script.js"></script>
+</html>
